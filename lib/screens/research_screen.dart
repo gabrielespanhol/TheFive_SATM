@@ -1,4 +1,6 @@
 import 'package:am_thefive_satm/components/app_bar.dart';
+import 'package:am_thefive_satm/models/locais_model.dart';
+import 'package:am_thefive_satm/repository/locais_repository.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -20,12 +22,23 @@ class _ResearchScreenState extends State<ResearchScreen> {
 
   @override
   Widget build(BuildContext context) {
+
+    
+
     final cityField = Material(
       child: Column(
-
-        
-
-        children: [
+        children: <Widget>[
+          Text(
+            "Selecione uma cidade",
+            style: TextStyle(
+              color: Color(0xff000000),
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+            ),
+          ),
+          SizedBox(
+            height: 20,
+          ),
           Container(
             alignment: Alignment.center,
             width: double.infinity,
@@ -51,7 +64,7 @@ class _ResearchScreenState extends State<ResearchScreen> {
                 "Salvador",
                 "Gramado",
                 "Niterói",
-                "Holambra"
+                "Holambra",
               ].map<DropdownMenuItem<String>>((String value) {
                 return DropdownMenuItem<String>(
                   value: value,
@@ -72,10 +85,11 @@ class _ResearchScreenState extends State<ResearchScreen> {
         minWidth: MediaQuery.of(context).size.width,
         padding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
         onPressed: () {
-          //Navigator.pushNamed(
-          // context,
-          // "/",
-          //);
+          Navigator.pushNamed(
+            context,
+            "/cidade",
+            arguments: 1,
+          );
         },
         child: Text("Pesquisar",
             textAlign: TextAlign.center,

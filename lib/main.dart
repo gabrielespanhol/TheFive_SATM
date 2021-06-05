@@ -1,4 +1,5 @@
-import 'package:am_thefive_satm/screens/details_screen.dart';
+import 'package:am_thefive_satm/screens/city_screen.dart';
+import 'package:am_thefive_satm/screens/details_city_screen.dart';
 import 'package:am_thefive_satm/screens/list_screen.dart';
 import 'package:am_thefive_satm/screens/login_screen.dart';
 import 'package:am_thefive_satm/screens/menu_screen.dart';
@@ -24,6 +25,7 @@ class MyApp extends StatelessWidget {
         '/detalhes': (context) => Detalhes(),
         '/senha': (context) => PasswordScreen(),
         '/cadastro': (context) => RegisterScreen(),
+        '/cidade': (context) => CityScreen(),
       },
       title: 'SATM',
     
