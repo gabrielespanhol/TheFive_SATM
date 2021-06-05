@@ -16,11 +16,7 @@ class Detalhes extends StatelessWidget {
       child: Container(
         child: ClipRRect(
           borderRadius: BorderRadius.circular(5),
-          child: LinearProgressIndicator(
-            backgroundColor: Colors.grey.shade700,
-            value: locaisModel.maisAmado,
-            valueColor: AlwaysStoppedAnimation(Colors.white),
-          ),
+          
         ),
       ),
     );
@@ -35,7 +31,7 @@ class Detalhes extends StatelessWidget {
         child: new RichText(
           text: new TextSpan(children: [
             TextSpan(
-                text: locaisModel.estrelas.toString(),
+                
                 style: TextStyle(color: Colors.white,
                 fontSize: 20,
                 )
@@ -92,7 +88,7 @@ class Detalhes extends StatelessWidget {
                     new Icon(Icons.cake_rounded, color: Colors.yellow.shade700),
                   ),
                 TextSpan(
-                    text: locaisModel.aniversario,
+                   
                     style: TextStyle(color: Colors.grey.shade900,  
                       fontSize: 15.0,
                       backgroundColor: Color.fromRGBO(255, 255, 255, 0.5),
@@ -151,7 +147,7 @@ class Detalhes extends StatelessWidget {
     );
 
     final bottomContentText = Text(
-      locaisModel.historia,
+      "!",
       style: TextStyle(fontSize: 18.0),
       textAlign: TextAlign.justify,
     );

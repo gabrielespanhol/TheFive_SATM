@@ -2,15 +2,15 @@ import 'package:am_thefive_satm/models/locais_model.dart';
 import 'package:am_thefive_satm/repository/locais_repository.dart';
 import 'package:flutter/material.dart';
 
-
 class CityScreen extends StatefulWidget {
   @override
   _CityScreenState createState() => _CityScreenState();
-  
 }
 
 class _CityScreenState extends State<CityScreen> {
-  int cidade;
+  String cidade;
+
+  int teste = 1;
 
   @override
   Widget build(BuildContext context) {
@@ -70,11 +70,50 @@ class _CityScreenState extends State<CityScreen> {
   ListView buildListView(List<LocaisModel> locais) {
     return ListView.builder(
       itemCount: locais == null ? 0 : locais.length,
+
+      // ignore: missing_return
       itemBuilder: (BuildContext ctx, int index) {
-        if (locais[index].id == cidade) {
-          return cardLocal(locais[index]);
-        } else {
-          return null;
+        if (teste != 0) {
+          if (identical(locais[0].nome, cidade)) {
+            teste = 0;
+            return cardLocal(locais[0]);
+          } 
+          else if (identical(locais[1].nome, cidade)) {
+            teste = 0;
+            return cardLocal(locais[1]);
+          }
+          else if (identical(locais[2].nome, cidade)) {
+            teste = 0;
+            return cardLocal(locais[2]);
+          }
+          else if (identical(locais[3].nome, cidade)) {
+            teste = 0;
+            return cardLocal(locais[3]);
+          }
+          else if (identical(locais[4].nome, cidade)) {
+            teste = 0;
+            return cardLocal(locais[4]);
+          }
+          else if (identical(locais[5].nome, cidade)) {
+            teste = 0;
+            return cardLocal(locais[5]);
+          }
+          else if (identical(locais[6].nome, cidade)) {
+            teste = 0;
+            return cardLocal(locais[6]);
+          }
+          else if (identical(locais[7].nome, cidade)) {
+            teste = 0;
+            return cardLocal(locais[7]);
+          }
+          else if (identical(locais[8].nome, cidade)) {
+            teste = 0;
+            return cardLocal(locais[8]);
+          }
+          else if (identical(locais[9].nome, cidade)) {
+            teste = 0;
+            return cardLocal(locais[9]);
+          }
         }
       },
     );
@@ -146,19 +185,6 @@ class _CityScreenState extends State<CityScreen> {
           subtitle: Row(
             children: <Widget>[
               Expanded(
-                flex: 2,
-                child: Container(
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(4),
-                    child: LinearProgressIndicator(
-                      backgroundColor: Colors.grey,
-                      value: local.maisAmado,
-                      valueColor: AlwaysStoppedAnimation(Colors.white),
-                    ),
-                  ),
-                ),
-              ),
-              Expanded(
                 flex: 0,
                 child: Padding(
                     padding: EdgeInsets.only(left: 10.0, bottom: 0),
@@ -167,16 +193,6 @@ class _CityScreenState extends State<CityScreen> {
                       color: Colors.pink.shade50,
                     )),
               ),
-              Expanded(
-                flex: 2,
-                child: Padding(
-                  padding: EdgeInsets.only(left: 2.0),
-                  child: Text(
-                    local.aniversario,
-                    style: TextStyle(color: Colors.white),
-                  ),
-                ),
-              )
             ],
           ),
           trailing: Icon(

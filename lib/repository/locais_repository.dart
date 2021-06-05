@@ -1,7 +1,7 @@
 
-import 'package:am_thefive_satm/models/locais_model.dart';
+import "package:am_thefive_satm/models/locais_model.dart";
 
-import 'database.dart';
+import "database.dart";
 
 // ignore: camel_case_types
 class LocaisRepository {
@@ -15,19 +15,114 @@ class LocaisRepository {
     if (db.created) {
       // ignore: deprecated_member_use
       locais = new List<LocaisModel>();
+
       locais.add(
         new LocaisModel(
             id: 1,
-            nome: 'São Paulo',
-            aniversario: '25 de Janeiro',
-            maisAmado: 1.0,
-            estrelas: 5,
-            historia:'São Paulo, está entre as cidades mais populosas do mundo, com diversas instituições culturais e uma rica tradição arquitetônica. Ao pensar em São Paulo como um destino turístico, muita gente associa a cidade aos negócios. No entanto, a capital paulista oferece muito mais do que centros para convenções, reuniões ou congressos.',
-            back: 'saopaulo.jpeg',
-        ),
-            
+            nome: "São Paulo",
+            nota: 8,
+            descricao: "Abaixo você pode baixar os arquivos finaceiros do municipio como Consulta Receita Orçamentária, Relatórios da Receita Tributária e Demostrativos de receitas",
+            back: "saopaulo.jpeg",
+        ),  
       );
+
+       locais.add(
+        new LocaisModel(
+            id: 2,
+            nome: "Guarulhos",
+            nota: 1,
+            descricao: "Abaixo você pode baixar os arquivos finaceiros do municipio como Consulta Receita Orçamentária, Relatórios da Receita Tributária e Demostrativos de receitas",
+            back: "saopaulo.jpeg",
+        ),  
+      );
+
+       locais.add(
+        new LocaisModel(
+            id: 3,
+            nome: "Campinas",
+            nota: 1,
+            descricao: "Abaixo você pode baixar os arquivos finaceiros do municipio como Consulta Receita Orçamentária, Relatórios da Receita Tributária e Demostrativos de receitas",
+            back: "saopaulo.jpeg",
+        ),  
+      );
+
+       locais.add(
+        new LocaisModel(
+            id: 4,
+            nome: "São Bernardo do Campo",
+            nota: 1,
+            descricao: "Abaixo você pode baixar os arquivos finaceiros do municipio como Consulta Receita Orçamentária, Relatórios da Receita Tributária e Demostrativos de receitas",
+            back: "saopaulo.jpeg",
+        ),  
+      );
+
+       locais.add(
+        new LocaisModel(
+            id: 5,
+            nome: "Osasco",
+            nota: 1,
+            descricao: "Abaixo você pode baixar os arquivos finaceiros do municipio como Consulta Receita Orçamentária, Relatórios da Receita Tributária e Demostrativos de receitas",
+            back: "saopaulo.jpeg",
+        ),  
+      );
+
+
+       locais.add(
+        new LocaisModel(
+            id: 6,
+            nome: "Maua",
+            nota: 1,
+            descricao: "Abaixo você pode baixar os arquivos finaceiros do municipio como Consulta Receita Orçamentária, Relatórios da Receita Tributária e Demostrativos de receitas",
+            back: "saopaulo.jpeg",
+        ),  
+      );
+
+       locais.add(
+        new LocaisModel(
+            id: 7,
+            nome: "Bauru",
+            nota: 1,
+            descricao: "Abaixo você pode baixar os arquivos finaceiros do municipio como Consulta Receita Orçamentária, Relatórios da Receita Tributária e Demostrativos de receitas",
+            back: "saopaulo.jpeg",
+        ),  
+      );
+
+      
+       locais.add(
+        new LocaisModel(
+            id: 8,
+            nome: "Carapicuíba",
+            nota: 1,
+            descricao: "Abaixo você pode baixar os arquivos finaceiros do municipio como Consulta Receita Orçamentária, Relatórios da Receita Tributária e Demostrativos de receitas",
+            back: "saopaulo.jpeg",
+        ),  
+      );
+
+
+       locais.add(
+        new LocaisModel(
+            id: 9,
+            nome: "Barueri",
+            nota: 1,
+            descricao: "Abaixo você pode baixar os arquivos finaceiros do municipio como Consulta Receita Orçamentária, Relatórios da Receita Tributária e Demostrativos de receitas",
+            back: "saopaulo.jpeg",
+        ),  
+      );
+
+
+       locais.add(
+        new LocaisModel(
+            id: 10,
+            nome: "Assis",
+            nota: 1,
+            descricao: "Abaixo você pode baixar os arquivos finaceiros do municipio como Consulta Receita Orçamentária, Relatórios da Receita Tributária e Demostrativos de receitas",
+            back: "saopaulo.jpeg",
+        ),  
+      );
+      
+
     }
+
 
     return new Future.value(locais);
   }

@@ -139,19 +139,7 @@ class _LocaisScreenState extends State<LocaisScreen> {
           ),
           subtitle: Row(
             children: <Widget>[
-              Expanded(
-                flex: 2,
-                child: Container(
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(4),
-                    child: LinearProgressIndicator(
-                      backgroundColor: Colors.grey,
-                      value: local.maisAmado,
-                      valueColor: AlwaysStoppedAnimation(Colors.white),
-                    ),
-                  ),
-                ),
-              ),
+             
               Expanded(
                 flex: 0,
                 child: Padding(
@@ -161,16 +149,7 @@ class _LocaisScreenState extends State<LocaisScreen> {
                       color: Colors.pink.shade50,
                     )),
               ),
-              Expanded(
-                flex: 2,
-                child: Padding(
-                  padding: EdgeInsets.only(left: 2.0),
-                  child: Text(
-                    local.aniversario,
-                    style: TextStyle(color: Colors.white),
-                  ),
-                ),
-              )
+             
             ],
           ),
           trailing: Icon(
