@@ -19,11 +19,10 @@ class _ResearchScreenState extends State<ResearchScreen> {
   _ResearchScreenState();
 
   String dropdownValue = 'São Paulo';
-
+  
   @override
   Widget build(BuildContext context) {
 
-    
 
     final cityField = Material(
       child: Column(
@@ -56,15 +55,20 @@ class _ResearchScreenState extends State<ResearchScreen> {
               onChanged: (String newValue) {
                 setState(() {
                   dropdownValue = newValue;
-                  print(dropdownValue);
+                  
                 });
               },
               items: <String>[
                 "São Paulo",
-                "Salvador",
-                "Gramado",
-                "Niterói",
-                "Holambra",
+                "Guarulhos",
+                "Campinas",
+                "São Bernardo do Campo",
+                "Osasco",
+                "Maua",
+                "Bauru",
+                "Carapicuíba",
+                "Barueri",
+                "Assis",
               ].map<DropdownMenuItem<String>>((String value) {
                 return DropdownMenuItem<String>(
                   value: value,
@@ -88,7 +92,7 @@ class _ResearchScreenState extends State<ResearchScreen> {
           Navigator.pushNamed(
             context,
             "/cidade",
-            arguments: 1,
+            arguments: dropdownValue,
           );
         },
         child: Text("Pesquisar",
