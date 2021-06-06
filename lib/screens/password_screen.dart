@@ -32,7 +32,7 @@ class _PasswordScreenState extends State<PasswordScreen> {
         "OU",
         textAlign: TextAlign.center,
         style: TextStyle(
-          color: Color(0xff38b6ff),
+          color: Color(0xff000000),
           fontSize: 18,
           fontWeight: FontWeight.bold,
         ),
@@ -57,7 +57,7 @@ class _PasswordScreenState extends State<PasswordScreen> {
         "Voltar",
         textAlign: TextAlign.center,
         style: TextStyle(
-          color: Color(0xff38b6ff),
+          color: Color(0xff000000),
           fontSize: 18,
           fontWeight: FontWeight.bold,
         ),
@@ -67,7 +67,7 @@ class _PasswordScreenState extends State<PasswordScreen> {
     final passwordButon = Material(
       elevation: 2.0,
       borderRadius: BorderRadius.circular(30.0),
-      color: Color(0xff38b6ff),
+      color: Color(0xff000000),
       child: MaterialButton(
         minWidth: MediaQuery.of(context).size.width,
         padding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
@@ -79,11 +79,11 @@ class _PasswordScreenState extends State<PasswordScreen> {
           ScaffoldMessenger.of(context).showSnackBar(
             SnackBar(
               content: Text(
-                "Senha nova Solicitada",
+                "Senha nova solicitada",
                 textAlign: TextAlign.center,
               ),
               duration: const Duration(milliseconds: 1500),
-              backgroundColor: Color(0xff38b6ff),
+              backgroundColor: Color(0xff000000),
               behavior: SnackBarBehavior.floating,
               shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.all(Radius.circular(30))),
@@ -91,7 +91,7 @@ class _PasswordScreenState extends State<PasswordScreen> {
             ),
           );
         },
-        child: Text("Solicitar Senha",
+        child: Text("Solicitar senha",
             textAlign: TextAlign.center,
             style: style.copyWith(
                 color: Colors.white, fontWeight: FontWeight.bold)),

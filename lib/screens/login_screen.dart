@@ -75,7 +75,7 @@ class _LoginScreenState extends State<LoginScreen> {
        child :Text("Esqueci a senha",
         textAlign: TextAlign.center,
          style: TextStyle(
-           color: Color(0xff38b6ff),
+           color: Color(0xff000000),
            fontSize: 16,
            fontWeight: FontWeight.bold,
          ),
@@ -96,7 +96,7 @@ class _LoginScreenState extends State<LoginScreen> {
         textAlign: TextAlign.center,
          style: TextStyle(
            fontSize: 16,
-           color: Color(0xff38b6ff),
+           color: Color(0xff000000),
            fontWeight: FontWeight.bold
          ),
       ),

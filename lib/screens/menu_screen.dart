@@ -17,35 +17,34 @@ class _MenuScreenState extends State<MenuScreen> {
   @override
   Widget build(BuildContext context) {
 
+    final menu = Material(
+      
+      child: Text(
+        "Selecione uma opção",
+        style: TextStyle(
+          fontSize: 20,
+          
+        ),
+      ),
+
+    );
 
     final pesquisaCard = new Container(
-
-          width: 400.0,
-          height: 65.0,
-          margin: new EdgeInsets.only(left: 15.0,right: 15.0),
-          decoration: new BoxDecoration(
-
-            gradient: LinearGradient(
+      width: 400.0,
+      height: 65.0,
+      margin: new EdgeInsets.only(left: 15.0, right: 15.0),
+      decoration: new BoxDecoration(
+          gradient: LinearGradient(
               colors: [const Color(0xFFFFFFFFF), const Color(0xFFffffff)],
               begin: const FractionalOffset(0.0, 0.0),
               end: const FractionalOffset(3.5, 0.0),
               stops: [0.0, 0.5],
               tileMode: TileMode.clamp),
-              border: Border.all(
-                width: 2.5,
-                color: Colors.black
-              ),
-              borderRadius: BorderRadius.all(Radius.circular(70.0))
-
-          
-    ),
-    
-    
-    child: Container(
+          border: Border.all(width: 2.5, color: Colors.grey.shade500),
+          borderRadius: BorderRadius.all(Radius.circular(70.0))),
+      child: Container(
         child: ListTile(
-          
-          contentPadding:
-          EdgeInsets.symmetric(horizontal: 20.0, vertical: 4.0),
+          contentPadding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 4.0),
           leading: Container(
             padding: EdgeInsets.only(right: 10.0),
             decoration: new BoxDecoration(
@@ -66,46 +65,35 @@ class _MenuScreenState extends State<MenuScreen> {
             textAlign: TextAlign.left,
             style: TextStyle(
               color: Colors.black,
-              fontWeight: FontWeight.bold,
+              
             ),
           ),
           onTap: () {
             Navigator.pushNamed(
-            context,
-            "/pesquisa",
-          );
+              context,
+              "/pesquisa",
+            );
           },
         ),
-        
       ),
-
-      
     );
-      
-    
-    final cidadeAleatoria = new Container(
-          width: 400.0,
-          height: 65.0,
-          margin: new EdgeInsets.only(left: 15.0,right: 15.0),
-          decoration: new BoxDecoration(
 
-            gradient: LinearGradient(
+    final cidadeAleatoria = new Container(
+      width: 400.0,
+      height: 65.0,
+      margin: new EdgeInsets.only(left: 15.0, right: 15.0),
+      decoration: new BoxDecoration(
+          gradient: LinearGradient(
               colors: [const Color(0xFFFFFFFFF), const Color(0xFFffffff)],
               begin: const FractionalOffset(0.0, 0.0),
               end: const FractionalOffset(3.5, 0.0),
               stops: [0.0, 0.5],
               tileMode: TileMode.clamp),
-              border: Border.all(
-                width: 2.5,
-                color: Colors.black
-              ),
-              borderRadius: BorderRadius.all(Radius.circular(70.0))
-          
-    ),
-    child: Container(
+          border: Border.all(width: 2.5, color: Colors.grey.shade500),
+          borderRadius: BorderRadius.all(Radius.circular(70.0))),
+      child: Container(
         child: ListTile(
-          contentPadding:
-          EdgeInsets.symmetric(horizontal: 20.0, vertical: 4.0),
+          contentPadding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 4.0),
           leading: Container(
             padding: EdgeInsets.only(right: 10.0),
             decoration: new BoxDecoration(
@@ -126,7 +114,7 @@ class _MenuScreenState extends State<MenuScreen> {
             textAlign: TextAlign.left,
             style: TextStyle(
               color: Colors.black,
-              fontWeight: FontWeight.bold,
+              
             ),
           ),
           onTap: () {
@@ -135,31 +123,23 @@ class _MenuScreenState extends State<MenuScreen> {
         ),
       ),
     );
-   
-    final rankCard = new Container(
-    
-         width: 400.0,
-          height: 65.0,
-          margin: new EdgeInsets.only(left: 15.0,right: 15.0),
-          decoration: new BoxDecoration(
 
-            gradient: LinearGradient(
+    final rankCard = new Container(
+      width: 400.0,
+      height: 65.0,
+      margin: new EdgeInsets.only(left: 15.0, right: 15.0),
+      decoration: new BoxDecoration(
+          gradient: LinearGradient(
               colors: [const Color(0xFFFFFFFFF), const Color(0xFFffffff)],
               begin: const FractionalOffset(0.0, 0.0),
               end: const FractionalOffset(3.5, 0.0),
               stops: [0.0, 0.5],
               tileMode: TileMode.clamp),
-              border: Border.all(
-                width: 2.5,
-                color: Colors.black
-              ),
-              borderRadius: BorderRadius.all(Radius.circular(70.0))
-         
-    ),
-    child: Container(
+          border: Border.all(width: 2.5, color: Colors.grey.shade500),
+          borderRadius: BorderRadius.all(Radius.circular(70.0))),
+      child: Container(
         child: ListTile(
-          contentPadding:
-          EdgeInsets.symmetric(horizontal: 20.0, vertical: 4.0),
+          contentPadding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 4.0),
           leading: Container(
             padding: EdgeInsets.only(right: 10.0),
             decoration: new BoxDecoration(
@@ -180,27 +160,24 @@ class _MenuScreenState extends State<MenuScreen> {
             textAlign: TextAlign.left,
             style: TextStyle(
               color: Colors.black,
-              fontWeight: FontWeight.bold,
+              
             ),
           ),
           onTap: () {
             Navigator.pushNamed(
-            context,
-            "/rank",
-          );
+              context,
+              "/rank",
+            );
           },
         ),
       ),
-    ); 
+    );
 
     return Scaffold(
-       
-      body: SingleChildScrollView(
-        
+        body: SingleChildScrollView(
       child: Center(
         child: Container(
           color: Colors.white,
-          
           child: Padding(
             padding: const EdgeInsets.only(top: 0),
             child: Column(
@@ -208,19 +185,19 @@ class _MenuScreenState extends State<MenuScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
                 new GradientAppBar(""),
-               
                 SizedBox(height: 45.0),
-                  pesquisaCard,
-                  SizedBox(height: 25.0),
-                  cidadeAleatoria,
-                  SizedBox(height: 25.0),
-                  rankCard
+                menu,
+                SizedBox(height: 35.0),
+                pesquisaCard,
+                SizedBox(height: 25.0),
+                cidadeAleatoria,
+                SizedBox(height: 25.0),
+                rankCard
               ],
             ),
           ),
         ),
       ),
-    )
-    ); 
+    ));
   }
 }

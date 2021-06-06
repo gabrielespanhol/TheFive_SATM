@@ -32,7 +32,7 @@ class _ResearchScreenState extends State<ResearchScreen> {
             style: TextStyle(
               color: Color(0xff000000),
               fontSize: 20,
-              fontWeight: FontWeight.bold,
+              
             ),
           ),
           SizedBox(
@@ -48,7 +48,7 @@ class _ResearchScreenState extends State<ResearchScreen> {
                     end: const FractionalOffset(3.5, 0.0),
                     stops: [0.0, 0.5],
                     tileMode: TileMode.clamp),
-                border: Border.all(width: 2.5, color: Colors.black),
+                border: Border.all(width: 2.5, color: Colors.grey.shade500),
                 borderRadius: BorderRadius.all(Radius.circular(70.0))),
             child: DropdownButton<String>(
               value: dropdownValue,
@@ -98,7 +98,7 @@ class _ResearchScreenState extends State<ResearchScreen> {
         child: Text("Pesquisar",
             textAlign: TextAlign.center,
             style: style.copyWith(
-                color: Colors.white, fontWeight: FontWeight.bold)),
+                color: Colors.white)),
       ),
     );
 

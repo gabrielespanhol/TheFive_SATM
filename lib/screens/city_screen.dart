@@ -127,38 +127,32 @@ class _CityScreenState extends State<CityScreen> {
       ),
       elevation: 12.0,
       margin: new EdgeInsets.symmetric(
-        horizontal: 7.0,
+        horizontal: 10.0,
         vertical: 8.0,
       ),
       child: Container(
         decoration: BoxDecoration(
-            gradient: LinearGradient(
-                begin: Alignment.topRight,
-                end: Alignment.bottomLeft,
-                colors: [
-              Colors.pink,
-              Colors.blue,
-            ])
-
-            /**
-           *  gradient: LinearGradient(
-              colors: [const Color(0xFFFFFFFFF), const Color(0xFFa3ddff)],
+         
+        
+        
+             gradient: LinearGradient(
+              colors: [const Color(0xFFFFFFFFF), const Color(0xFFffffff)],
               begin: const FractionalOffset(0.0, 0.0),
               end: const FractionalOffset(3.5, 0.0),
               stops: [0.0, 0.5],
               tileMode: TileMode.clamp),
               border: Border.all(
                 width: 2.5,
-                color: Colors.lightBlue
+                color: Colors.grey.shade500
               ),
               borderRadius: BorderRadius.all(Radius.circular(70.0))
-           */
+           
 
-            ),
+        ),
         child: ListTile(
           contentPadding: EdgeInsets.symmetric(
             horizontal: 20.0,
-            vertical: 10.0,
+            vertical: 1.0,
           ),
           leading: Container(
             padding: EdgeInsets.only(right: 12.0),
@@ -166,38 +160,26 @@ class _CityScreenState extends State<CityScreen> {
               border: new Border(
                 right: new BorderSide(
                   width: 1.0,
-                  color: Colors.white24,
+                  color: Colors.black,
                 ),
               ),
             ),
             child: Icon(
               Icons.location_city,
-              color: Colors.white,
+              color: Colors.black,
             ),
           ),
           title: Text(
             local.nome,
             style: TextStyle(
-              color: Colors.white,
-              fontWeight: FontWeight.bold,
+              color: Colors.black,
+              
             ),
           ),
-          subtitle: Row(
-            children: <Widget>[
-              Expanded(
-                flex: 0,
-                child: Padding(
-                    padding: EdgeInsets.only(left: 10.0, bottom: 0),
-                    child: Icon(
-                      Icons.cake,
-                      color: Colors.pink.shade50,
-                    )),
-              ),
-            ],
-          ),
+        
           trailing: Icon(
             Icons.keyboard_arrow_right,
-            color: Colors.white,
+            color: Colors.black,
             size: 30.0,
           ),
           onTap: () {

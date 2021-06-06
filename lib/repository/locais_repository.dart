@@ -21,8 +21,8 @@ class LocaisRepository {
             id: 1,
             nome: "São Paulo",
             nota: 8,
-            descricao: "Abaixo você pode baixar os arquivos finaceiros do municipio como Consulta Receita Orçamentária, Relatórios da Receita Tributária e Demostrativos de receitas",
-            back: "saopaulo.jpeg",
+            descricao: "O Portal da Transparência é uma ferramenta que facilita o acesso da população, de forma atualizada, a dados e informações sobre a Administração Pública.\nInformações de gastos e despesas dos órgãos da Administração Indireta, como autarquias e empresas municipais, também poderão ser encontradas no portal. \n\nAbaixo você pode baixar os arquivos finaceiros do município para maiores informações.",
+            back: "8.png",
         ),  
       );
 
@@ -31,8 +31,8 @@ class LocaisRepository {
             id: 2,
             nome: "Guarulhos",
             nota: 1,
-            descricao: "Abaixo você pode baixar os arquivos finaceiros do municipio como Consulta Receita Orçamentária, Relatórios da Receita Tributária e Demostrativos de receitas",
-            back: "saopaulo.jpeg",
+            descricao: "O Portal da Transparência é uma ferramenta que facilita o acesso da população, de forma atualizada, a dados e informações sobre a Administração Pública.\nInformações de gastos e despesas dos órgãos da Administração Indireta, como autarquias e empresas municipais, também poderão ser encontradas no portal. \n\nAbaixo você pode baixar os arquivos finaceiros do município para maiores informações.",
+            back: "9.png",
         ),  
       );
 
@@ -41,8 +41,8 @@ class LocaisRepository {
             id: 3,
             nome: "Campinas",
             nota: 1,
-            descricao: "Abaixo você pode baixar os arquivos finaceiros do municipio como Consulta Receita Orçamentária, Relatórios da Receita Tributária e Demostrativos de receitas",
-            back: "saopaulo.jpeg",
+            descricao: "O Portal da Transparência é uma ferramenta que facilita o acesso da população, de forma atualizada, a dados e informações sobre a Administração Pública.\nInformações de gastos e despesas dos órgãos da Administração Indireta, como autarquias e empresas municipais, também poderão ser encontradas no portal. \n\nAbaixo você pode baixar os arquivos finaceiros do município para maiores informações.",
+            back: "10.png",
         ),  
       );
 
@@ -51,8 +51,8 @@ class LocaisRepository {
             id: 4,
             nome: "São Bernardo do Campo",
             nota: 1,
-            descricao: "Abaixo você pode baixar os arquivos finaceiros do municipio como Consulta Receita Orçamentária, Relatórios da Receita Tributária e Demostrativos de receitas",
-            back: "saopaulo.jpeg",
+            descricao: "O Portal da Transparência é uma ferramenta que facilita o acesso da população, de forma atualizada, a dados e informações sobre a Administração Pública.\nInformações de gastos e despesas dos órgãos da Administração Indireta, como autarquias e empresas municipais, também poderão ser encontradas no portal. \n\nAbaixo você pode baixar os arquivos finaceiros do município para maiores informações.",
+            back: "11.png",
         ),  
       );
 
@@ -61,8 +61,8 @@ class LocaisRepository {
             id: 5,
             nome: "Osasco",
             nota: 1,
-            descricao: "Abaixo você pode baixar os arquivos finaceiros do municipio como Consulta Receita Orçamentária, Relatórios da Receita Tributária e Demostrativos de receitas",
-            back: "saopaulo.jpeg",
+            descricao: "O Portal da Transparência é uma ferramenta que facilita o acesso da população, de forma atualizada, a dados e informações sobre a Administração Pública.\nInformações de gastos e despesas dos órgãos da Administração Indireta, como autarquias e empresas municipais, também poderão ser encontradas no portal. \n\nAbaixo você pode baixar os arquivos finaceiros do município para maiores informações.",
+            back: "12.png",
         ),  
       );
 
@@ -70,10 +70,10 @@ class LocaisRepository {
        locais.add(
         new LocaisModel(
             id: 6,
-            nome: "Maua",
+            nome: "Mauá",
             nota: 1,
-            descricao: "Abaixo você pode baixar os arquivos finaceiros do municipio como Consulta Receita Orçamentária, Relatórios da Receita Tributária e Demostrativos de receitas",
-            back: "saopaulo.jpeg",
+            descricao: "O Portal da Transparência é uma ferramenta que facilita o acesso da população, de forma atualizada, a dados e informações sobre a Administração Pública.\nInformações de gastos e despesas dos órgãos da Administração Indireta, como autarquias e empresas municipais, também poderão ser encontradas no portal. \n\nAbaixo você pode baixar os arquivos finaceiros do município para maiores informações.",
+            back: "13.png",
         ),  
       );
 
@@ -82,8 +82,8 @@ class LocaisRepository {
             id: 7,
             nome: "Bauru",
             nota: 1,
-            descricao: "Abaixo você pode baixar os arquivos finaceiros do municipio como Consulta Receita Orçamentária, Relatórios da Receita Tributária e Demostrativos de receitas",
-            back: "saopaulo.jpeg",
+            descricao: "O Portal da Transparência é uma ferramenta que facilita o acesso da população, de forma atualizada, a dados e informações sobre a Administração Pública.\nInformações de gastos e despesas dos órgãos da Administração Indireta, como autarquias e empresas municipais, também poderão ser encontradas no portal. \n\nAbaixo você pode baixar os arquivos finaceiros do município para maiores informações.",
+            back: "14.png",
         ),  
       );
 
@@ -93,8 +93,8 @@ class LocaisRepository {
             id: 8,
             nome: "Carapicuíba",
             nota: 1,
-            descricao: "Abaixo você pode baixar os arquivos finaceiros do municipio como Consulta Receita Orçamentária, Relatórios da Receita Tributária e Demostrativos de receitas",
-            back: "saopaulo.jpeg",
+            descricao: "O Portal da Transparência é uma ferramenta que facilita o acesso da população, de forma atualizada, a dados e informações sobre a Administração Pública.\nInformações de gastos e despesas dos órgãos da Administração Indireta, como autarquias e empresas municipais, também poderão ser encontradas no portal. \n\nAbaixo você pode baixar os arquivos finaceiros do município para maiores informações.",
+            back: "15.png",
         ),  
       );
 
@@ -104,8 +104,8 @@ class LocaisRepository {
             id: 9,
             nome: "Barueri",
             nota: 1,
-            descricao: "Abaixo você pode baixar os arquivos finaceiros do municipio como Consulta Receita Orçamentária, Relatórios da Receita Tributária e Demostrativos de receitas",
-            back: "saopaulo.jpeg",
+            descricao: "O Portal da Transparência é uma ferramenta que facilita o acesso da população, de forma atualizada, a dados e informações sobre a Administração Pública.\nInformações de gastos e despesas dos órgãos da Administração Indireta, como autarquias e empresas municipais, também poderão ser encontradas no portal. \n\nAbaixo você pode baixar os arquivos finaceiros do município para maiores informações.",
+            back: "16.png",
         ),  
       );
 
@@ -115,8 +115,8 @@ class LocaisRepository {
             id: 10,
             nome: "Assis",
             nota: 1,
-            descricao: "Abaixo você pode baixar os arquivos finaceiros do municipio como Consulta Receita Orçamentária, Relatórios da Receita Tributária e Demostrativos de receitas",
-            back: "saopaulo.jpeg",
+            descricao: "O Portal da Transparência é uma ferramenta que facilita o acesso da população, de forma atualizada, a dados e informações sobre a Administração Pública.\nInformações de gastos e despesas dos órgãos da Administração Indireta, como autarquias e empresas municipais, também poderão ser encontradas no portal. \n\nAbaixo você pode baixar os arquivos finaceiros do município para maiores informações.",
+            back: "17.png",
         ),  
       );
       
