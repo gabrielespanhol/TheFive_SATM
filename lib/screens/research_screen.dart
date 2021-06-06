@@ -1,6 +1,4 @@
 import 'package:am_thefive_satm/components/app_bar.dart';
-import 'package:am_thefive_satm/models/locais_model.dart';
-import 'package:am_thefive_satm/repository/locais_repository.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
