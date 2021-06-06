@@ -17,20 +17,17 @@ class _ResearchScreenState extends State<ResearchScreen> {
   _ResearchScreenState();
 
   String dropdownValue = 'São Paulo';
-  
+
   @override
   Widget build(BuildContext context) {
-
-
     final cityField = Material(
       child: Column(
         children: <Widget>[
           Text(
-            "Selecione uma cidade",
+            "Selecione um município",
             style: TextStyle(
               color: Color(0xff000000),
               fontSize: 20,
-              
             ),
           ),
           SizedBox(
@@ -53,7 +50,7 @@ class _ResearchScreenState extends State<ResearchScreen> {
               onChanged: (String newValue) {
                 setState(() {
                   dropdownValue = newValue;
-                  
+                
                 });
               },
               items: <String>[
@@ -62,7 +59,7 @@ class _ResearchScreenState extends State<ResearchScreen> {
                 "Campinas",
                 "São Bernardo do Campo",
                 "Osasco",
-                "Maua",
+                "Mauá",
                 "Bauru",
                 "Carapicuíba",
                 "Barueri",
@@ -95,8 +92,7 @@ class _ResearchScreenState extends State<ResearchScreen> {
         },
         child: Text("Pesquisar",
             textAlign: TextAlign.center,
-            style: style.copyWith(
-                color: Colors.white)),
+            style: style.copyWith(color: Colors.white)),
       ),
     );
 

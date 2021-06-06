@@ -1,3 +1,4 @@
+import 'dart:math';
 import 'package:am_thefive_satm/components/app_bar.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -16,17 +17,13 @@ class _MenuScreenState extends State<MenuScreen> {
 
   @override
   Widget build(BuildContext context) {
-
     final menu = Material(
-      
       child: Text(
         "Selecione uma opção",
         style: TextStyle(
           fontSize: 20,
-          
         ),
       ),
-
     );
 
     final pesquisaCard = new Container(
@@ -65,7 +62,6 @@ class _MenuScreenState extends State<MenuScreen> {
             textAlign: TextAlign.left,
             style: TextStyle(
               color: Colors.black,
-              
             ),
           ),
           onTap: () {
@@ -110,15 +106,33 @@ class _MenuScreenState extends State<MenuScreen> {
             ),
           ),
           title: Text(
-            'Cidade Aleatoria',
+            'Cidade Aleatória',
             textAlign: TextAlign.left,
             style: TextStyle(
               color: Colors.black,
-              
             ),
           ),
           onTap: () {
-            print('Navegar');
+            var value = [
+              "São Paulo",
+              "Guarulhos",
+              "Campinas",
+              "São Bernardo do Campo",
+              "Osasco",
+              "Mauá",
+              "Bauru",
+              "Carapicuíba",
+              "Barueri",
+              "Assis",
+            ];
+            var rng = new Random();
+            var i = rng.nextInt(10).toInt();
+            print(i);
+            Navigator.pushNamed(
+              context,
+              "/cidade",
+              arguments: value[i],
+            );
           },
         ),
       ),
@@ -160,7 +174,6 @@ class _MenuScreenState extends State<MenuScreen> {
             textAlign: TextAlign.left,
             style: TextStyle(
               color: Colors.black,
-              
             ),
           ),
           onTap: () {

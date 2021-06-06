@@ -65,20 +65,30 @@ class Detalhes extends StatelessWidget {
       ),
     );
 
-    var dropdownValue = "2015";
+    var dropdownValue = ["2015","2016","2017","2018","2019","2020","2021",];
     final ano = Material(
       child: Container(
-
-          child: DropdownButton<String>(
-            value: dropdownValue,
-            onChanged: (value) {
-          
-            },
-
-          ),
+          width: 60,
+          child: DropdownButtonFormField(
+                    
+                    items: dropdownValue.map(
+                      (nivel) {
+                        return DropdownMenuItem(
+                          child: Text(nivel),
+                          value: nivel,
+                        );
+                      },
+                    ).toList(),
+                    decoration: new InputDecoration(
+                      alignLabelWithHint: true,
+                      hintText: '2015',
+                    ),
+                    onChanged: (value) {
+                      print('change');
+                    },
 
         ),
-    );
+    ));
 
     final botao = Material(
 
@@ -86,7 +96,20 @@ class Detalhes extends StatelessWidget {
         padding: const EdgeInsets.only(top: 20),
         child: GestureDetector(
           onTap: () =>  (
-            Navigator.pushNamed(context, '/rank')
+            ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text(
+                "Baixando...",
+                textAlign: TextAlign.center,
+              ),
+              duration: const Duration(milliseconds: 3000),
+              backgroundColor: Colors.grey.shade700,
+              behavior: SnackBarBehavior.floating,
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.all(Radius.circular(30))),
+              width: 200,
+            ),
+           )
           ),
 
          child: Container(
