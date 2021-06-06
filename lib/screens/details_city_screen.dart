@@ -27,7 +27,7 @@ class Detalhes extends StatelessWidget {
 
     final texto = Material(
       child: Padding(
-        padding: const EdgeInsets.only(top: 10,right: 15,left: 15),
+        padding: const EdgeInsets.only(top: 10, right: 15, left: 15),
         child: Text(
           locaisModel.descricao,
           textAlign: TextAlign.justify,
@@ -38,8 +38,6 @@ class Detalhes extends StatelessWidget {
       ),
     );
 
-
-    
     String back = locaisModel.back;
     final bandeira = Material(
       child: Container(
@@ -53,6 +51,59 @@ class Detalhes extends StatelessWidget {
       ),
     );
 
+    final selecione = Material(
+      child: Padding(
+        padding: const EdgeInsets.only(top: 40),
+        child: Container(
+          child: Text(
+            "Selecione uma data:",
+            style: TextStyle(
+              fontSize: 16,
+            ),
+          ),
+        ),
+      ),
+    );
+
+    var dropdownValue = "2015";
+    final ano = Material(
+      child: Container(
+
+          child: DropdownButton<String>(
+            value: dropdownValue,
+            onChanged: (value) {
+          
+            },
+
+          ),
+
+        ),
+    );
+
+    final botao = Material(
+
+      child: Padding(
+        padding: const EdgeInsets.only(top: 20),
+        child: GestureDetector(
+          onTap: () =>  (
+            Navigator.pushNamed(context, '/rank')
+          ),
+
+         child: Container(
+           width: 230,
+           height: 40,
+           decoration: BoxDecoration(
+             image: new DecorationImage(
+              image: new AssetImage("botao.png"), 
+              fit: BoxFit.cover,
+           ),
+          borderRadius: BorderRadius.circular(30),
+         ),
+        )
+    ),
+      )
+    );
+
     final container = Material(
       child: Padding(
         padding: const EdgeInsets.only(top: 0, left: 15, right: 15),
@@ -62,6 +113,9 @@ class Detalhes extends StatelessWidget {
           children: <Widget>[
             bandeira,
             texto,
+            selecione,
+            ano,
+            botao,
           ],
         ),
       ),
