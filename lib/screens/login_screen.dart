@@ -23,7 +23,7 @@ class _LoginScreenState extends State<LoginScreen> {
     // than having to individually change instances of widgets.
 
     final emailField = TextField(
-      obscureText: true,
+      
       style: style,
       decoration: InputDecoration(
           contentPadding: EdgeInsets.fromLTRB(20.0, 15.0, 20.0, 15.0),
