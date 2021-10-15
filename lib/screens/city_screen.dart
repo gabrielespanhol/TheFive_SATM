@@ -52,7 +52,7 @@ class _CityScreenState extends State<CityScreen> {
         ),
       ),
       body: FutureBuilder<List<LocaisModel>>(
-        future: LocaisService().findAllAsync(),
+        future: LocalService(cidade).findAllAsync(),
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.done) {
             return buildListView(snapshot.data);
@@ -70,51 +70,8 @@ class _CityScreenState extends State<CityScreen> {
   ListView buildListView(List<LocaisModel> locais) {
     return ListView.builder(
       itemCount: locais == null ? 0 : locais.length,
-
-      // ignore: missing_return
       itemBuilder: (BuildContext ctx, int index) {
-        if (teste != 0) {
-          if (identical(locais[0].nome, cidade)) {
-            teste = 0;
-            return cardLocal(locais[0]);
-          } 
-          else if (identical(locais[1].nome, cidade)) {
-            teste = 0;
-            return cardLocal(locais[1]);
-          }
-          else if (identical(locais[2].nome, cidade)) {
-            teste = 0;
-            return cardLocal(locais[2]);
-          }
-          else if (identical(locais[3].nome, cidade)) {
-            teste = 0;
-            return cardLocal(locais[3]);
-          }
-          else if (identical(locais[4].nome, cidade)) {
-            teste = 0;
-            return cardLocal(locais[4]);
-          }
-          else if (identical(locais[5].nome, cidade)) {
-            teste = 0;
-            return cardLocal(locais[5]);
-          }
-          else if (identical(locais[6].nome, cidade)) {
-            teste = 0;
-            return cardLocal(locais[6]);
-          }
-          else if (identical(locais[7].nome, cidade)) {
-            teste = 0;
-            return cardLocal(locais[7]);
-          }
-          else if (identical(locais[8].nome, cidade)) {
-            teste = 0;
-            return cardLocal(locais[8]);
-          }
-          else if (identical(locais[9].nome, cidade)) {
-            teste = 0;
-            return cardLocal(locais[9]);
-          }
-        }
+        return cardLocal(locais[index]);
       },
     );
   }

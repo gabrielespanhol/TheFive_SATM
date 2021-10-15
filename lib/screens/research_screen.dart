@@ -17,6 +17,7 @@ class _ResearchScreenState extends State<ResearchScreen> {
   _ResearchScreenState();
 
   String dropdownValue = 'São Paulo';
+  String cidade = '1';
 
   @override
   Widget build(BuildContext context) {
@@ -50,7 +51,35 @@ class _ResearchScreenState extends State<ResearchScreen> {
               onChanged: (String newValue) {
                 setState(() {
                   dropdownValue = newValue;
-                
+                  if (dropdownValue == 'São Paulo') {
+                    cidade = '1';
+                  } else if (dropdownValue == 'Guarulhos') {
+                    cidade = '2';
+                  }
+                  else if (dropdownValue == 'Campinas') {
+                    cidade = '3';
+                  }
+                  else if (dropdownValue == 'São Bernardo do Campo') {
+                    cidade = '4';
+                  }
+                  else if (dropdownValue == 'Osasco') {
+                    cidade = '5';
+                  }
+                   else if (dropdownValue == 'Mauá') {
+                    cidade = '6';
+                  }
+                  else if (dropdownValue == 'Bauru') {
+                    cidade = '7';
+                  }
+                  else if (dropdownValue == 'Carapicuíba') {
+                    cidade = '8';
+                  }
+                   else if (dropdownValue == 'Barueri') {
+                    cidade = '9';
+                  }
+                  else if (dropdownValue == 'Assis') {
+                    cidade = '10';
+                  }
                 });
               },
               items: <String>[
@@ -87,7 +116,7 @@ class _ResearchScreenState extends State<ResearchScreen> {
           Navigator.pushNamed(
             context,
             "/cidade",
-            arguments: dropdownValue,
+            arguments: cidade,
           );
         },
         child: Text("Pesquisar",

@@ -2,7 +2,6 @@ import 'package:am_thefive_satm/models/locais_model.dart';
 import 'package:am_thefive_satm/services/service_config.dart';
 import 'package:dio/dio.dart';
 
-
 class LocaisService {
   static final String _endpoint =
       'https://6168984609e030001712c057.mockapi.io/';
@@ -48,5 +47,36 @@ class LocaisService {
       print('Ocorreu um erro: $error');
       throw error;
     }
+  }
+}
+
+class LocalService {
+  
+  final resource;
+
+  LocalService(this.resource);
+
+  static final String _endpoint =
+      'https://6168984609e030001712c057.mockapi.io/cidades/';
+  
+  final ServiceConfig service = new ServiceConfig(_endpoint);
+
+  Future<List<LocaisModel>> findAllAsync() async {
+    List<LocaisModel> lista = [];
+
+    try {
+      Response response = await service.create().get(resource);
+      if (response.statusCode == 200) {
+        
+            LocaisModel locaisModel = new LocaisModel.fromMap(response.data);
+            lista.add(locaisModel);
+          
+      }
+    } catch (error) {
+      print('Ocorreu um erro: $error');
+      throw error;
+    }
+
+    return lista;
   }
 }
