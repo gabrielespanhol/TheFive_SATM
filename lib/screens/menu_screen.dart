@@ -113,25 +113,14 @@ class _MenuScreenState extends State<MenuScreen> {
             ),
           ),
           onTap: () {
-            var value = [
-              "São Paulo",
-              "Guarulhos",
-              "Campinas",
-              "São Bernardo do Campo",
-              "Osasco",
-              "Mauá",
-              "Bauru",
-              "Carapicuíba",
-              "Barueri",
-              "Assis",
-            ];
+            
             var rng = new Random();
             var i = rng.nextInt(10).toInt();
             print(i);
             Navigator.pushNamed(
               context,
               "/cidade",
-              arguments: value[i],
+              arguments: i.toString(),
             );
           },
         ),
@@ -201,7 +190,9 @@ class _MenuScreenState extends State<MenuScreen> {
                 SizedBox(height: 45.0),
                 menu,
                 SizedBox(height: 35.0),
-                pesquisaCard,                
+                pesquisaCard, 
+                SizedBox(height: 25.0),
+                cidadeAleatoria,               
                 SizedBox(height: 25.0),
                 rankCard
               ],
