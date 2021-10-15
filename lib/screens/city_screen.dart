@@ -1,5 +1,5 @@
 import 'package:am_thefive_satm/models/locais_model.dart';
-import 'package:am_thefive_satm/repository/locais_repository.dart';
+import 'package:am_thefive_satm/services/locais_service.dart';
 import 'package:flutter/material.dart';
 
 class CityScreen extends StatefulWidget {
@@ -52,7 +52,7 @@ class _CityScreenState extends State<CityScreen> {
         ),
       ),
       body: FutureBuilder<List<LocaisModel>>(
-        future: LocaisRepository().findAllAsync(),
+        future: LocaisService().findAllAsync(),
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.done) {
             return buildListView(snapshot.data);

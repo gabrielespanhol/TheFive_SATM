@@ -201,9 +201,7 @@ class _MenuScreenState extends State<MenuScreen> {
                 SizedBox(height: 45.0),
                 menu,
                 SizedBox(height: 35.0),
-                pesquisaCard,
-                SizedBox(height: 25.0),
-                cidadeAleatoria,
+                pesquisaCard,                
                 SizedBox(height: 25.0),
                 rankCard
               ],
